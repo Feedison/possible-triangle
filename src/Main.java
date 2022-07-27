@@ -20,9 +20,9 @@ public class Main {
         "The sum of two lengths of the sides of a triangle always greater than the length of the third side."
         */
         if (a + b > c && a + c > b && b + c > a)
-            System.out.println("Triangle with sides "+a+", "+b+", "+c+" is possible.");
+            System.out.printf("Triangle with sides %d, %d, %d  is possible.", a, b, c);
         else
-            System.out.println("Triangle with sides "+a+", "+b+", "+c+" is not possible.");
+            System.out.printf("Triangle with sides %d, %d, %d is not possible.", a, b, c);
 
     }
 
