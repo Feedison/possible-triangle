@@ -19,11 +19,13 @@ public class Main {
         /* Checking theorem:
         "The sum of two lengths of the sides of a triangle always greater than the length of the third side."
         */
-        if (a + b > c && a + c > b && b + c > a)
-            System.out.printf("Triangle with sides %d, %d, %d  is possible.", a, b, c);
+        if (a > 0 && b > 0 && c > 0)
+            if (a + b > c && a + c > b && b + c > a)
+                System.out.printf("Triangle with sides %d, %d, %d  is possible.", a, b, c);
+            else
+                System.out.printf("Triangle with sides %d, %d, %d is not possible.", a, b, c);
         else
-            System.out.printf("Triangle with sides %d, %d, %d is not possible.", a, b, c);
-
+            System.out.println("Please, enter positive numbers.");
     }
 
 }
