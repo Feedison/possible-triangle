@@ -23,7 +23,7 @@ public class Main {
         System.out.println(res);
     }
 
-
+    // Check method
     static String isTrianglePossible(int a, int b, int c) {
         if ((a > 0) && (b > 0) && (c > 0)) {
             if ((a + b > c) && (a + c > b) && (b + c > a)) {
